@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neon Snake - A modern browser-based Snake Game">
+    <title>Neon Snake</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main class="game-container">
+
+        <header class="header">
+            <div>
+                <p class="tag">ARCADE GAME</p>
+                <h1>NEON <span>SNAKE</span></h1>
+            </div>
+
+            <button id="pauseBtn" class="pause-btn">Ⅱ</button>
+        </header>
+
+        <section class="stats">
+            <div class="stat-box">
+                <span>SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>HIGH SCORE</span>
+                <strong id="highScore">0</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>LEVEL</span>
+                <strong id="level">1</strong>
+            </div>
+        </section>
+
+        <section class="game-wrapper">
+
+            <canvas id="gameCanvas"></canvas>
+
+            <div id="startScreen" class="overlay">
+                <div class="overlay-content">
+                    <div class="snake-icon">🐍</div>
+                    <h2>READY?</h2>
+                    <p>Guide the snake. Eat the red orbs. Beat your high score.</p>
+                    <button id="startBtn" class="main-btn">START GAME</button>
+                </div>
+            </div>
+
+            <div id="gameOverScreen" class="overlay hidden">
+                <div class="overlay-content">
+                    <div class="game-over-icon">✦</div>
+                    <h2>GAME OVER</h2>
+
+                    <p>Your Score</p>
+                    <strong id="finalScore">0</strong>
+
+                    <p id="newRecord" class="record hidden">
+                        NEW HIGH SCORE!
+                    </p>
+
+                    <button id="restartBtn" class="main-btn">
+                        PLAY AGAIN
+                    </button>
+                </div>
+            </div>
+
+            <div id="pauseScreen" class="overlay hidden">
+                <div class="overlay-content">
+                    <h2>PAUSED</h2>
+                    <p>Take a breath, snake.</p>
+                    <button id="resumeBtn" class="main-btn">
+                        RESUME
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="controls">
+
+            <div class="instructions">
+                <p><span>↑ ↓ ← →</span> or <span>W A S D</span> to move</p>
+            </div>
+
+            <div class="mobile-controls">
+
+                <button data-direction="up">▲</button>
+
+                <div>
+                    <button data-direction="left">◀</button>
+                    <button data-direction="down">▼</button>
+                    <button data-direction="right">▶</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>NEON SNAKE • BUILT WITH HTML, CSS & JAVASCRIPT</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
