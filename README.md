@@ -4,12 +4,6 @@ A modern, responsive browser-based Snake Game built using HTML, CSS and JavaScri
 
 The project combines classic Snake gameplay with a neon-inspired interface, animated visuals, progressive difficulty, persistent high scores and mobile controls.
 
-🎮 Live Demo
-
-Play the game:
-
-https://DiviData02.github.io/Neon-Snake/
-
 
 ✨ Features
 
